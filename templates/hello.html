@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+{% if logiran %}
+    <h1>Hello {{ user.nickname() }}</h1>
+
+    <form method="post" action="/rezultat">
+        <button>OK</button>
+    </form>
+    <p><a href ="{{ logout_url }}">Odjavi se</a></p>
+{% else %}
+    <h1>Prijavi se</h1>
+    <p><a href="{{ login_url }}">Prijavi se</a></p>
+{% endif %}
+
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Posamezno sporocilo</title>
+</head>
+<body>
+    <h1>Podatki sporočila</h1>
+    <p>ID sporocila: {{ inputs.key.id() }}</p>
+    <p>Name: {{ inputs.input1 }}</p>
+    <p>Task: {{ inputs.input2 }}</p>
+    <p>Due date: {{ inputs.input3 }}</p>
+
+
+    <a href="/">hello</a>
+    <a href="/rezultat">New Task</a>
+    <a href="/inputs/{{ inputs.key.id() }}/uredi">Uredi</a>
+    <a href="/inputs/{{ inputs.key.id() }}/izbrisi">Izbrisi</a>
+</body>
+
+</html>
